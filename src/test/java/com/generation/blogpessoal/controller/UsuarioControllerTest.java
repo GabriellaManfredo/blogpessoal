@@ -30,7 +30,7 @@ public class UsuarioControllerTest {
 
 	// Enviar as requisições para a aplicação
 	@Autowired
-	private TestRestTemplate testRestTemplate;
+	private TestRestTemplate testRestTemplate; // Simula ao Insomnia o ambiente de teste
 
 	// Persiste os objetos no banco de dados de teste c/ senha criptografada
 	@Autowired
@@ -47,7 +47,7 @@ public class UsuarioControllerTest {
 
 		usuarioRepository.deleteAll();
 
-		usuarioService.cadastrarUsuario(new Usuario(0L, "Root", "root@root.com", "rootroot", "-"));
+		usuarioService.cadastrarUsuario(new Usuario(0L, "Root2", "root@root.com", "rootroot", "-"));
 
 	}
 
